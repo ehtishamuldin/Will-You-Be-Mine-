@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+  margin: 0;
+  background-color: #f9f4f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .container {
+  padding: 20px;
+}
+body .container #main-heading {
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #e91e63;
+}
+body .container #heart {
+  font-size: calc(1rem + 40vw);
+  color: #e91e63;
+  display: none;
+}
+body .container .buttons {
+  margin: 20px;
+}
+body .container .buttons button {
+  font-size: 20px;
+  padding: 12px 24px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff4081;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+body .container .buttons button:hover {
+  background-color: #ff5c8d;
+}
+body .container .popup {
+  display: none;
+  background-color: rgba(249, 249, 249, 0.7803921569);
+  display: none;
+  box-shadow: 0 2px 8px rgba(249, 249, 249, 0.7803921569);
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  font-family: "Dancing Script", cursive;
+  font-size: calc(10px + 1vw);
+  color: #e91e63;
+}
+body .container .popup .fade-in {
+  animation: fadeIn 0.3s ease;
+}
+body footer {
+  position: absolute;
+  bottom: 0;
+}
+body footer p {
+  font-size: 18px;
+}
+body footer p span {
+  color: #e91e63;
+  font-size: 24px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
